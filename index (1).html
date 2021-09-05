@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+
+    <title>Seeker Registration Form</title>
+
+    <style>
+      label{
+        font-size: 13px;
+        
+      }
+      input{
+        height: 24px;
+      }
+      .form-header{
+          width: 100%;
+          font-size: 20px;
+          background-color: rgba(128, 255, 0, 0.452);
+          text-align: center;
+          
+      }
+      .form-cotrol{
+        
+      }
+    </style>
+  </head>
+  <body>
+<form action="#">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card mb-3">
+            
+            <div class="card-body">
+              <div class="form-header mb-4">Personal Information</div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="name" class="form-label">Job Seeker Name</label>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" id="Fname" placeholder="First Name" required>
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" id="Mname" placeholder="Middle Name">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control" id="Lname" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="fathername" class="form-label">Father's Name</label>
+              </div>
+              <div class="col-10">
+                <input style="width: 90%;" type="text" class="form-control" id="fathername" placeholder="Father's Name" required>
+              </div>
+              
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="mothername" class="form-label">Mother's Name</label>
+              </div>
+              <div class="col-10">
+                <input style="width: 90%;" type="text" class="form-control" id="mothername" placeholder="Mother's Name" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="spouse" class="form-label">Spouse Name</label>
+              </div>
+              <div class="col-10">
+                <input style="width: 90%;" type="text" class="form-control" id="spouse" placeholder="Spouse's Name">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="nid" class="form-label">National NID</label>
+              </div>
+              <div class="col-10">
+                <input style="width: 90%;" type="text" class="form-control" id="nid" placeholder="NID Number 124566789" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbcountry" class="form-label">Birth Country</label>
+              </div>
+              <div class="col-9">
+                <select name="cmbcountry" class="form-control" id="cmbcountry" required>
+                  <option value="">Choose</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cnmbDistrict" class="form-label">Birth District</label>
+              </div>
+              <div class="col-9">
+                <select name="cnmbDistrict" class="form-control" id="cnmbDistrict" required>
+                  <option value="">Choose</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="dob" class="form-label">Birth Date</label>
+              </div>
+              <div class="col-9">
+                <input style="" type="date" class="form-control" id="dob" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="age" class="form-label">Age</label>
+              </div>
+              <div class="col-4">
+                <input style="" type="text" class="form-control" id="age" required>
+              </div>
+              <div class="col-2">
+                <label for="photo" class="">Upload Photo</label>
+              </div>
+              <div class="col-4">
+                <input type="file" class="form-control" name="photo" id="photo" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="nationalty" class="form-label">Nationality</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" id="nationalty" required>
+              </div>
+              <div class="col-2">
+                <label for="cmbsex" class="">Sex</label>
+              </div>
+              <div class="col-4">
+                <select name="cmbsex" class="form-control" id="cmbsex" required>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="maritalstutus" class="form-label">Marital Status</label>
+              </div>
+              <div class="col-4">
+                <select name="cmbsex" class="form-control" id="cmbsex" required>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+              <div class="col-2">
+                <label for="cmbreligion" class="form-label">Religion</label>
+              </div>
+              <div class="col-4">
+                <select name="cmbreligion" class="form-control" id="cmbreligion" required>
+                  <option value="1">Islam</option>
+                  <option value="2">Hindu</option>
+                  <option value="2">....</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="weight" class="form-label">Weight</label>
+              </div>
+              <div class="col-4">
+                <input style="height: 24px;" type="text" class="form-control" id="weight" required>
+              </div>
+              <div class="col-2">
+                <label for="height" class="form-label">Height</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" id="height" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="daughter" class="form-label">No of Daughter</label>
+              </div>
+              <div class="col-4">
+                <input style="height: 24px;" type="text" class="form-control" id="daughter">
+              </div>
+              <div class="col-2">
+                <label for="son" class="">No of Son</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" id="Son" >
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="daughter" class="form-label">Passport Issue Date</label>
+              </div>
+              <div class="col-4">
+                <input type="date" class="form-control" id="passportissue">
+              </div>
+              <div class="col-2">
+                <label for="son" class="form-label">Passport No</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" id="passportno" >
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="" class="form-label">Desired Job</label>
+              </div>
+              <div class="col-3">
+                <select name="" class="form-control" id="" required>
+                  <option value="">Select</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <select name="" class="form-control" id="" required>
+                  <option value="">Select</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+              <div class="col-3">
+                <select name="" class="form-control" id="" required>
+                  <option value="">Select</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>  <!-- col -->
+
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              
+            <div class="form-header mb-4">Address</div>
+            <div class="bg-light text-justify p-1 mb-2"><h6>Permanent Address</h6></div>
+            
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="" class="form-label">Street Address/ Para</label>
+              </div>
+              <div class="col-9">
+                <input style="width: 80%;" type="text" class="form-control" id="" placeholder="" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbdivision" class="form-label">Division</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbdivision" class="form-control" id="cmbdivision" style="width: 40%;" required>
+                  <option value="">Choose</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbDiatrict" class="form-label">District</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbDiatrict" class="form-control" id="cmbDiatrict" style="width: 40%;" required>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbThana" class="form-label">Thana/Upazila</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbThana" class="form-control" id="cmbThana" style="width: 40%;" required>
+                  <option value=""></option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbWord" class="form-label">Word/Union</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbWord" class="form-control" id="cmbWord" style="width: 40%;" required>
+                  <option value=""></option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbArea" class="form-label">Area/Village</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbArea" class="form-control" id="cmbArea" style="width: 40%;" required>
+                  <option value=""></option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="post" class="form-label">Post Office</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" name="post" id="post" required>
+              </div>
+              <div class="col-2">
+                <label for="mobile" class="">Mobile</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" name="mobile" id="mobile" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="phone" class="form-label">Phone</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" name="phone" id="phone" required>
+              </div>
+              <div class="col-2">
+                <label for="email" class="">Email</label>
+              </div>
+              <div class="col-4">
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="bg-light text-justify p-1 mb-2"><h6 class="">Present Address</h6>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Same as Permanent Address
+                </label>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="" class="form-label">Street Address/ Para</label>
+              </div>
+              <div class="col-9">
+                <input style="width: 80%;" type="text" class="form-control" id="" placeholder="" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbdivision" class="form-label">Division</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbdivision" class="form-control" id="cmbdivision" style="width: 40%;" required>
+                  <option value="">Choose</option>
+                  <option value="">......</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbDiatrict" class="form-label">District</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbDiatrict" class="form-control" id="cmbDiatrict" style="width: 40%;" required>
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbThana" class="form-label">Thana/Upazila</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbThana" class="form-control" id="cmbThana" style="width: 40%;" required>
+                  <option value=""></option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbWord" class="form-label">Word/Union</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbWord" class="form-control" id="cmbWord" style="width: 40%;" required>
+                  <option value=""></option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="cmbArea" class="form-label">Area/Village</label>
+              </div>
+              <div class="col-10">
+                <select name="cmbArea" class="form-control" id="cmbArea" style="width: 40%;" required>
+                  <option value=""></option>
+                  
+                </select>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="post" class="form-label">Post Office</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" name="post" id="post" required>
+              </div>
+              <div class="col-2">
+                <label for="mobile" class="">Mobile</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" name="mobile" id="mobile" required>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="phone" class="form-label">Phone</label>
+              </div>
+              <div class="col-4">
+                <input type="text" class="form-control" name="phone" id="phone" required>
+              </div>
+              <div class="col-2">
+                <label for="email" class="">Email</label>
+              </div>
+              <div class="col-4">
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div> <!-- col -->
+
+        <!-- Start Nomiee Section -->
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="form-header mb-4">Nominee Information</div>
+              <div class="row mb-3">
+                <div class="col-2">
+                  <label for="nomname" class="form-label">Nominee's Name</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="nomname" id="nomname" required>
+                </div>
+                <div class="col-2">
+                  <label for="relation" class="form-label">Relation</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="relation" id="relation" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-2">
+                  <label for="phone" class="form-label">Phone</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="phone" id="phone" required>
+                </div>
+                <div class="col-2">
+                  <label for="address" class="form-label">Address</label>
+                </div>
+                <div class="col-4">
+                  <textarea name="" id="" class="form-control" cols="20" rows="3"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col -->
+
+        <!-- Start Educaiton section -->
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="form-header mb-4">Education</div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label for="inname" class="form-label">Institution/School</label>
+                  <input type="text" class="form-control" name="inname" id="inname" required>
+                </div>
+                <div class="col-3">
+                  <label for="passyear" class="form-label">Passing Year</label>
+                  <select name="" class="form-control" id="" required>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                  </select>
+                  
+                </div>
+                <div class="col-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="col-6">
+                  <label for="degname" class="form-label">Degree Name</label>
+                  <input type="text" class="form-control" name="degname" id="degname" required>
+                </div>
+                <div class="col-3">
+                  <label for="board" class="form-label">Board</label>
+                  <select name="" class="form-control" id="board" required>
+                    <option value="">Dhaka</option>
+                    <option value="">BTEB</option>
+                    <option value="">Jessore</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label for="result" class="form-label">Result</label>
+                  <input type="text" class="form-control" name="result" id="result" required>
+                </div>
+
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-primary mt-3">Add more if needed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col -->
+
+        <!-- Start Language skill section -->
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="form-header mb-4">Language Skill</div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label for="language" class="form-label">Language</label>
+                  <input type="text" class="form-control" name="language" id="language" required>
+                </div>
+                <div class="col-3">
+                  <label for="oral" class="form-label">Oral</label>
+                  <input type="text" class="form-control" name="oral" id="oral" required>                  
+                </div>
+                <div class="col-3">
+                  <label for="subject" class="form-label">Writting skill</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-primary mt-3">Add more if needed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col -->
+
+        <!-- Start Experience section -->
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="form-header mb-4">Experience Information</div>
+              <div class="bg-light text-justify p-1 mb-2"><h6>Work Experience</h6></div>
+              <div class="row mb-3">
+                <div class="col-2">
+                  <label for="cname" class="form-label">Company Name</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="cname" id="cname" required>
+                </div>
+                <div class="col-2">
+                  <label for="postheld" class="form-label">Post Held</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="postheld" id="postheld" required>
+                </div>
+
+                <div class="col-2">
+                  <label for="serve" class="form-label">Serve From</label>
+                </div>
+                <div class="col-4">
+                  <input type="date" class="form-control" name="serve" id="serve" required>
+                </div>
+                <div class="col-2">
+                  <label for="postheld" class="form-label">Serve From</label>
+                </div>
+                <div class="col-4">
+                  <input type="date" class="form-control" name="postheld" id="postheld" required>
+                </div>
+
+                <!-- <div class="col-2">
+                  <label for="expaddress" class="form-label">Address</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="expaddress" id="expaddress" required>
+                </div>
+                <div class="col-2">
+                  <label for="expPhone" class="form-label">Phone</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="expPhone" id="expPhone" required>
+                </div>
+                
+                <div class="col-2">
+                  <label for="contactaddress" class="form-label">Contact Person</label>
+                </div>
+                <div class="col-4">
+                  <input type="text" class="form-control" name="contactaddress" id="contactaddress">
+                </div>
+                <div class="col-2">
+                  <label for="postheld" class="form-label">Email</label>
+                </div>
+                <div class="col-4">
+                  <input type="email" class="form-control" name="postheld" id="postheld">
+                </div> -->
+                
+              </div>
+              
+            </div>
+          </div>
+        </div> <!-- col -->
+
+        <!-- Start Traninng information section -->
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="form-header mb-4">Training Information</div>
+              <div class="row mb-3">
+                <div class="col-6">
+                  <label for="trname" class="form-label">Training Name</label>
+                  <input type="text" class="form-control" name="trname" id="trname" required>
+                </div>
+                <div class="col-6">
+                  <label for="passyear" class="form-label">Institution name</label>
+                  <select name="" class="form-control" id="" required>
+                    <option value="">Abc</option>
+                    <option value="">ajsh</option>
+                  </select>
+                  
+                </div>
+                <div class="col-6">
+                  <label for="subject" class="form-label">Duration</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required>
+                </div>
+                <div class="col-6">
+                  <label for="degname" class="form-label">Description</label>
+                  <input type="text" class="form-control" name="degname" id="degname" required>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-primary mt-3">Add more if needed</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col -->
+
+      </div>
+    </div>
+  </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
