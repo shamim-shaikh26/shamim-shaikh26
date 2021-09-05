@@ -18,7 +18,7 @@
 
     <style>
       label{
-        font-size: 13px;
+        font-size: 1৪px;
         
       }
       input{
@@ -40,6 +40,7 @@
 <form action="#">
     <div class="container">
       <div class="row justify-content-center">
+        <!-- Start General Information -->
         <div class="col-md-8">
           <div class="card mb-3">
             
@@ -58,6 +59,15 @@
               <div class="col-3">
                 <input type="text" class="form-control" id="Lname" placeholder="Last Name" required>
               </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-2">
+                <label for="" class="form-label">প্রার্থীর নাম</label>
+              </div>
+              <div class="col-10">
+                <input style="width: 90%;" type="text" class="form-control" id="" placeholder="আবেদনকারীর পুরো নাম বাংলায় লিখুন" required>
+              </div>
+              
             </div>
             <div class="row mb-3">
               <div class="col-2">
@@ -243,6 +253,7 @@
           </div>
         </div>  <!-- col -->
 
+        <!-- Start Address seciton -->
         <div class="col-md-8">
           <div class="card mb-3">
             <div class="card-body">
@@ -588,7 +599,7 @@
                   <input type="date" class="form-control" name="postheld" id="postheld" required>
                 </div>
 
-                <!-- <div class="col-2">
+                <div class="col-2">
                   <label for="expaddress" class="form-label">Address</label>
                 </div>
                 <div class="col-4">
@@ -612,8 +623,24 @@
                 </div>
                 <div class="col-4">
                   <input type="email" class="form-control" name="postheld" id="postheld">
-                </div> -->
-                
+                </div>  
+
+                <div class="col-2">
+                  <label for="response" class="form-label">Responsibilies</label>
+                </div>
+                <div class="col-4">
+                  <textarea name="" id="" class="form-control" cols="26" rows="3"></textarea>
+                </div>
+                <div class="col-2">
+                  <label for="achivement" class="form-label">Achivement</label>
+                </div>
+                <div class="col-4">
+                  <textarea name="" id="" class="form-control" cols="26" rows="3"></textarea>
+                </div> 
+
+                <div class="col-6">
+                  <button type="button" class="btn btn-outline-primary mt-3">Add more if needed</button>
+                </div>              
               </div>
               
             </div>
@@ -649,10 +676,19 @@
                 <div class="col-6">
                   <button type="button" class="btn btn-outline-primary mt-3">Add more if needed</button>
                 </div>
+                <div class="col-3">
+                  
+                </div>
+                <div class="col-3">
+                  <button type="button" class="btn btn-primary mt-3">Send & Preview</button>
+                </div>
+                            
+              </div>
               </div>
             </div>
           </div>
         </div> <!-- col -->
+
 
       </div>
     </div>
