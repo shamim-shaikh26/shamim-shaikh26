@@ -20,13 +20,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"
     />
 
-    <title>Seeker Registration Form</title>
+    <title>Applicant's Registration Form</title>
 
     <style>
-      label{
-        font-size: 1৪px;
-        
+      body{
+        background-color: rgba(211, 211, 211, 0.596);
+        box-sizing: border-box;
       }
+      
       input{
         height: 24px;
       }
@@ -40,8 +41,7 @@
           background-color: #0f9647;
           color: aliceblue;
           text-align: center;
-          padding: 2px;
-          
+          padding: 2px;          
       }
       .btn{
         background-color: #0f9647;
@@ -52,6 +52,51 @@
         height: 30px;
         background-color: lightgray;
       }
+
+/*==================================================
+ * Effect 2
+ * ===============================================*/
+
+ .box {
+  
+  min-height:20vh;
+  background:#FFF;
+  margin:40px auto;
+}
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
     </style>
   </head>
   <body>
@@ -84,24 +129,24 @@
         </div> -->
         <!-- ENd Menu wrapper -->
 
-      <form action="#">
-        <div class="container mt-5">
+      
+        <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-12">
               <div class="col-lg-12 col-md-8">
                 
-                <div class="card">
+                <div class="card box effect2">
                   <div class="card-body p-0">                
                     <div class="form-header mb-4">User Login</div>
                     <div class="row mb-3 px-4">
                       <form action="#">
                         <div class="col-12 mb-2">
                           <label for="uname" class="form-label">User Name</label>
-                          <input type="text" class="form-control" id="uname" name="uname" placeholder="username" required>
+                          <input type="text" class="form-control" id="uname" name="uname" placeholder="Enter username" required>
                         </div>
                         <div class="col-12">
                           <label for="password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
+                          <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
                         </div>
                         <div class="col-12 mt-3">
                           <button class="btn">Log In</button>
@@ -110,7 +155,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card mt-3">
+                <div class="card mt-3 box effect2">
                   <div class="card-body p-0">                
                     <div class="form-header mb-4 px-4">Mail Section</div>
                     <div class="row mb-3">
@@ -118,7 +163,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card mt-3">
+                <div class="card mt-3 box effect2">
                   <div class="card-body p-0">                
                     <div class="form-header mb-4">Notice</div>
                     <div class="row mb-3 px-4">
@@ -151,8 +196,9 @@
             <div class="col-lg-9 col-md-9 col-sm-12">
               <div class="row justify-content-center">
               <!-- Start General Information -->
+              <form action="#">
               <div class="col-lg-12 col-md-8">
-                <div class="card mb-3">              
+                <div class="card mb-3 box effect2">              
                   <div class="card-body p-0">
                     <div class="form-header mb-4">Personal Information</div>
                   <div class="row mb-3 px-4">
@@ -2180,7 +2226,7 @@
                 <div class="card mb-3">
                   <div class="card-body p-0">
                     
-                  <div class="form-header mb-4">Address</div>
+                  <div class="form-header">Address</div>
                   <div class="bg-light text-justify p-1 mb-2 px-4"><h6>Permanent Address</h6></div>
                   
                   <div class="row mb-3 px-4">
@@ -2677,7 +2723,7 @@
                       </div>
                       <div class="col-3">
                         <label for="result" class="form-label">Grade/Division</label>
-                        <input type="text" class="form-control" name="result" id="result" required>
+                        <input type="text" class="form-control" name="result" id="result" placeholder="A/First Class" required>
                       </div>
       
                       <div class="col-6">
@@ -2936,21 +2982,22 @@
                         <div class="col-3">
                           
                         </div>
-                        <div class="col-3">
-                          <button type="button" class="btn btn-primary mt-3">Send & Preview</button>
+                        <div class="col-3">                          
+                          <button type="submit" class="btn btn-primary mt-3">Save</button>
                         </div>
                                     
                     </div>
                   </div>
                 </div>
               </div>
+            </form>
               </div> <!-- col -->
             </div>
           </div>
           
         </div>
       </div>
-        </form>
+        
     </div>
         
 
